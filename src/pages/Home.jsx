@@ -1,4 +1,4 @@
-import Hero from "../sections/hero.jsx";
+import Hero from "../sections/Hero.jsx";
 import AboutUs from "../sections/AboutUs.jsx";
 import Services from "../sections/Services.jsx";
 
@@ -8,7 +8,6 @@ const Home = () => {
             <Hero />
             <AboutUs />
             <Services />
-
         </div>
     );
 };
