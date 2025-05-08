@@ -5,8 +5,7 @@ function Hero() {
     const slogan = useTypewriter("Desarrollamos software de alta calidad a tu medida ...", 60);
 
     return (
-        <div className="flex flex-col items-center justify-center w-full h-screen bg-fixed bg-center bg-cover bg-[#E8E6E0]"
-        style={{backgroundImage: 'url("/background.png")'}}>
+        <div className="flex flex-col items-center justify-center w-full h-screen bg-fixed bg-center bg-cover bg-[#E8E6E0]">
             <div className="z-10 flex flex-col md:flex-row items-center justify-center h-52">
                 <div className="flex flex-col sm:text-left text-center mb-10">
                     <img
