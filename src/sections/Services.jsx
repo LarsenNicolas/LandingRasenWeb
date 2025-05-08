@@ -67,7 +67,7 @@ function Services() {
         <div
             id="services"
             ref={sectionRef}
-            className="flex flex-col items-center justify-center w-full bg-[#E8E6E0] relative px-6 py-20"
+            className="flex flex-col items-center justify-center w-full bg-[#E8E6E0] relative px-6 py-10"
             style={{ minHeight: 'calc(100vh - 230px)' }}
         >
             <h2 className="text-4xl font-bold text-center text-[#343C43] mb-16">
