@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { Code, CuboidIcon as Cube, Eye, Zap, Shield, Users, ArrowRight, ChevronDown, Play } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import Scene from "@/modelViewer/scene";
+import Navbar from "@/components/navbar";
 
 export default function Component() {
   return (
-    <div className="flex flex-col min-h-screen bg-white overflow-x-hidden">
+    <div className="flex flex-col min-h-screen bg-white overflow-x-hidden font-mono">
       {/* Animated background elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         {/* Floating geometric elements */}
@@ -40,36 +40,7 @@ export default function Component() {
       </div>
 
       {/* Header */}
-      <header className="px-8 lg:px-12 h-20 flex items-center backdrop-blur-md bg-white/90 border-b border-slate-100 sticky top-0 z-50">
-        <Link href="/" className="flex items-center justify-center group">
-          <div className="transition-all duration-500 group-hover:scale-105">
-            <Image src="/logo.png" alt="RASEN WEB" width={140} height={45} className="h-10 w-auto" />
-          </div>
-        </Link>
-        <nav className="ml-auto flex gap-12">
-          <Link
-            href="#servicios"
-            className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-all duration-300 relative group"
-          >
-            Servicios
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link
-            href="#portfolio"
-            className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-all duration-300 relative group"
-          >
-            Portfolio
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link
-            href="#contacto"
-            className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-all duration-300 relative group"
-          >
-            Contacto
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-        </nav>
-      </header>
+      <Navbar />
 
       <main className="flex-1 relative">
         {/* Hero Section with 3D Model Space */}
