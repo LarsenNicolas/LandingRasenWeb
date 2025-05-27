@@ -192,23 +192,8 @@ export default function Component() {
                     ></div>
                   </div>
 
-                  {/* Placeholder for 3D Model */}
-                  <div className="relative w-full h-full flex items-center justify-center">
-                    {/* This is where the GLB model would be loaded */}
-                    <div className="w-64 h-64 bg-white rounded-2xl shadow-2xl flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
-                      <div className="absolute inset-0 bg-gradient-to-br from-slate-100 to-teal-50"></div>
-                      <div className="relative z-10 text-center space-y-4 h-full w-full">
-                        <Scene />
-                      </div>
-
-                      {/* Incomplete overlay pattern */}
-                      <div className="absolute inset-0 opacity-20">
-                        <div className="absolute top-0 left-0 w-8 h-8 border-l-2 border-t-2 border-slate-400"></div>
-                        <div className="absolute top-0 right-0 w-8 h-8 border-r-2 border-t-2 border-teal-400"></div>
-                        <div className="absolute bottom-0 left-0 w-8 h-8 border-l-2 border-b-2 border-teal-400"></div>
-                        <div className="absolute bottom-0 right-0 w-8 h-8 border-r-2 border-b-2 border-slate-400"></div>
-                      </div>
-                    </div>
+                  <div className="relative z-10 text-center space-y-20 h-full w-full">
+                    <Scene />
                   </div>
                 </div>
               </div>
